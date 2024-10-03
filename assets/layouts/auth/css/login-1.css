@@ -1,0 +1,216 @@
+.login.login-1 .login-aside .aside-img {
+	min-height: 360px;
+}
+.login.login-1 .signup-aside .aside-img {
+	min-height: 360px;
+}
+.login.login-1 .login-prelogin,
+.login.login-1 .login-signin,
+.login.login-1 .login-signup,
+.login.login-1 .login-forgot,
+.login.login-1 .login-reset, 
+.login.login-1 .login-changed  
+{
+	display: none;
+}
+
+.login.login-1.login-prelogin-on .login-prelogin {
+	display: block;
+}
+
+.login.login-1.login-prelogin-on .login-signup {
+	display: none;
+}
+
+.login.login-1.login-prelogin-on .login-signin {
+	display: none;
+}
+
+.login.login-1.login-prelogin-on .login-forgot {
+	display: none;
+}
+
+.login.login-1.login-prelogin-on .login-reset {
+	display: none;
+}
+
+.login.login-1.login-prelogin-on .login-changed {
+	display: none;
+}
+
+.login.login-1.login-signin-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-signin-on .login-signup {
+	display: none;
+}
+
+.login.login-1.login-signin-on .login-signin {
+	display: block;
+}
+
+.login.login-1.login-signin-on .login-forgot {
+	display: none;
+}
+
+.login.login-1.login-signin-on .login-reset {
+	display: none;
+}
+
+.login.login-1.login-signin-on .login-changed {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-signup {
+	display: block;
+}
+
+.login.login-1.login-signin-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-signin {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-forgot {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-reset {
+	display: none;
+}
+
+.login.login-1.login-signup-on .login-changed {
+	display: none;
+}
+
+.login.login-1.login-forgot-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-forgot-on .login-signup {
+	display: none;
+}
+
+.login.login-1.login-forgot-on .login-signin {
+	display: none;
+}
+
+.login.login-1.login-forgot-on .login-forgot {
+	display: block;
+}
+
+.login.login-1.login-forgot-on .login-reset {
+	display: none;
+}
+
+.login.login-1.login-forgot-on .login-changed {
+	display: none;
+}
+
+.login.login-1.login-reset-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-reset-on .login-signup {
+	display: none;
+}
+
+.login.login-1.login-reset-on .login-signin {
+	display: none;
+}
+
+.login.login-1.login-reset-on .login-forgot {
+	display: none;
+}
+
+.login.login-1.login-reset-on .login-reset {
+	display: block;
+}
+
+.login.login-1.login-reset-on .login-changed {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-prelogin {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-signup {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-signin {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-forgot {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-reset {
+	display: none;
+}
+
+.login.login-1.login-changed-on .login-changed {
+	display: block;
+}
+
+@media (min-width: 992px) {
+	.login.login-1 .login-aside {
+		width: 100%;
+		/* max-width: 600px; */
+		max-width: 50%;
+	}
+	.login.login-1 .signup-aside {
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.login.login-1 .login-content {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.login.login-1 .login-content .login-form {
+		width: 100%;
+		max-width: 360px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+	.login.login-1 .login-aside {
+		width: 100%;
+		/* max-width: 360px; */
+		max-width: 50%;
+	}
+	.login.login-1 .signup-aside {
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.login.login-1 .login-content .login-form {
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.login.login-1 .aside-img {
+		min-height: 300px !important;
+		background-size: 400px;
+	}
+
+	.login.login-1 .login-content .login-form {
+		width: 100%;
+		max-width: 100%;
+	}
+}

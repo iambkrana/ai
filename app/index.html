@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="script/mobile-detect.js"></script>
+        <script>
+            
+            var md = new MobileDetect(window.navigator.userAgent);
+            var parameters = location.search.substring(1).split("?");
+            if (md.mobile()){
+                if (parameters!=''){
+                    window.location.href = 'app.html?'+parameters; 
+                }else{
+                    window.location.href = 'app.html'; 
+                }
+                
+            }else{
+                if (parameters!=''){
+                    window.location.href = 'web.html?'+parameters; 
+                }else{
+                    window.location.href = 'web.html'; 
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Please wait
+    </body>
+</html>

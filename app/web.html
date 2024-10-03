@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script src="script/mobile-detect.js"></script>
+        <script>
+            var parameters = location.search.substring(1).split("?");
+            if (parameters!=''){
+                var url = 'app.html?'+parameters; 
+            }else{
+                var url = 'app.html'; 
+            }
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile()){
+                window.location.href = url;
+            }else{
+                
+            }
+        </script>
+        <style>
+            .app-container{
+                width: 100%; 
+                height: 100%; 
+                overflow: hidden; 
+            }
+            .phone-container{
+                text-align: center !important;
+                top: 0px; 
+                left: 0;
+                width: 412px; 
+                height: 100%;
+                max-height: 732px;   
+                background: none; 
+                margin: 0px auto;
+            }
+            .phone-img{
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                width: 412px; 
+                height: 100%;
+                max-height: 732px;  
+            }
+            .phone-frame{
+                top: 0px; 
+                width: 412px; 
+                height: 100%;
+                max-height: 732px;  
+                border: 0px;
+            }
+            .element {
+                filter: blur(0);
+                transform: scale(1.1);
+                transform: perspective(1px) scale(1.1);
+                backface-visibility: hidden;
+            }
+        </style>
+        <script>
+            // alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio);
+        </script>
+    </head>
+    <body>
+        <div id="Awarathon" class="app-container">
+            <div class="phone-container">
+                <iframe id="dcpframe" src="" class="phone-frame"></iframe>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById("dcpframe").src = url;
+    </script>
+</html>
